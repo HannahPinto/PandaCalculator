@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎃Panda Calculator! x</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+
+ <style>
+  .button {
+  background-color: black; 
+  color: lightpink;
+  margin: 2px;
+    border-radius: 50px;
+    display: inline-block;
+    width: 27px;
+  }
+  form {
+    border: 4px solid rgb(218, 194, 210);
+    width: auto;
+    display: inline-block;
+    padding: 9px;
+    background-image:url("images/background.jpg");
+    background-size: cover;
+}  
+ body {
+background-color: rgb(217, 233, 243);
+}
+.reset {
+width: auto;  
+} 
+ h1, p {
+  font-family: 'Amatic SC', cursive;
+ }
+ </style>
+</head>
+<body>
+  <main>
+    <h1>
+   🐼🎃calculator! x   
+    </h1>
+    <p>
+    💜Hi, this is the panda calculator I hope you enjoy! x
+    </p>
+    <form name="calculator" >
+      <input type="button" class="button" value="1" onClick="document.calculator.ans.value+='1'">
+      <input type="button" class="button" value="2" onClick="document.calculator.ans.value+='2'">
+      <input type="button" class="button" value="3" onClick="document.calculator.ans.value+='3'"><br>
+      <input type="button" class="button" value="4" onClick="document.calculator.ans.value+='4'">
+      <input type="button" class="button" value="5" onClick="document.calculator.ans.value+='5'">
+      <input type="button" class="button" value="6" onClick="document.calculator.ans.value+='6'"><br>
+      <input type="button" class="button" value="7" onClick="document.calculator.ans.value+='7'">
+      <input type="button" class="button" value="8" onClick="document.calculator.ans.value+='8'">
+      <input type="button" class="button" value="9" onClick="document.calculator.ans.value+='9'">
+      <input type="button" class="button" value="0" onClick="document.calculator.ans.value+='0'"><br>
+      <input type="button" class="button" value="-" onClick="document.calculator.ans.value+='-'">
+      <input type="button" class="button" value="+" onClick="document.calculator.ans.value+='+'">
+      <input type="button" class="button" value="*" onClick="document.calculator.ans.value+='*'">
+      <input type="button" class="button" value="/" onClick="document.calculator.ans.value+='/'"><br>
+      
+      
+      <input type="reset" class="button reset" value="Reset">
+      <input type="button" class="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+      <br>Solution <br><input type="textfield" name="ans" value="">
+    </form>
+  </main>
+</body>
+</html>
